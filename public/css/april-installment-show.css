@@ -1,0 +1,343 @@
+@font-face {
+	font-family: Gilroy;  
+	src: url(../fonts/Gilroy-Thin.ttf);  
+	font-weight: 200;  
+}
+
+@font-face {
+	font-family: Gilroy;  
+	src: url(../fonts/Gilroy-Regular.ttf);  
+	font-weight: 300;  
+}
+
+@font-face {
+	font-family: Gilroy;  
+	src: url(../fonts/Gilroy-SemiBold.ttf);  
+	font-weight: 500;  
+}
+
+@font-face {
+	font-family: Gilroy;  
+	src: url(../fonts/Gilroy-Bold.ttf);  
+	font-weight: 600;  
+}
+
+@font-face {
+	font-family: Gilroy;  
+	src: url(../fonts/Gilroy-ExtraBold.ttf);  
+	font-weight: 800;  
+}
+
+.april_installment_offer {
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.april_installment_offer .grey-option-text {
+    color: #83868c;
+    font-size: 14px;
+}
+.april_installment_offer .april-installment-price .formatted-installment-amt {
+    color: #ff2929;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Product price BNPL shortcode */
+.april_installment_offer.april-installment-offer__shortcode {
+    display: block;
+    text-align: initial;   
+}
+
+.april_installment_offer.april-installment-offer__shortcode.april-installment-offer__toggle .april-installment-price {
+    color: #A3A6BC;
+    opacity: 0.4;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.april_installment_offer.april-installment-offer__shortcode.april-installment-offer__toggle .april-installment-price.active {
+    opacity: 1;
+}
+
+.april_installment_offer.april-installment-offer__shortcode .april-installment-price .formatted-installment-amt {
+    color: #fa5402;
+}
+
+.april_installment_offer.april-installment-offer__shortcode input:checked + .slider {
+    background-color: #3A3CA6;
+}
+
+.april-installment-offer__toggle > .april-switch-container {
+    margin: 10px 0;
+}
+
+.april-installment-offer__toggle > .april-toggle-container {
+    margin: 10px 0;
+}
+
+.april-installment-offer__toggle > .april-toggle-container > div.april-switcher .switch {
+    width: 40px;
+    height: 22px;
+    margin-bottom: 0;
+}
+
+.april-installment-offer__toggle > .april-toggle-container > div.april-switcher .slider.round {
+    border-radius: 24px;
+}
+
+.april-installment-offer__toggle > .april-toggle-container > div.april-switcher .slider:before {
+    height: 20.5px;
+    width: 20.5px;
+}
+
+/* BNPL Switcher widget shortcode */
+.april-switcher-toggle-container {
+    display: table;
+    width: 100%;
+    max-width: 272px;
+    margin-bottom: 15px;
+}
+
+.april-switcher-toggle-container > div {
+    float: left;
+    padding: 10px 15px;
+    height: 70px;
+    width: calc(50% - 36px);
+}
+
+.april-switcher-toggle-container > div:first-child {
+    padding-left: 0;
+}
+
+.april-switcher-toggle-container > div:last-child {
+    padding-right: 0;
+    float: right;
+    text-align: right;
+}
+
+.april-switcher-toggle-container > div.april-switcher {
+    width: 72px;
+    position: relative;
+}
+
+.april-switcher-toggle-container > div.april-switcher .switch {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.april-switcher-toggle-container .payment-type {
+    opacity: 0.4;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.april-switcher-toggle-container .payment-type h6 {
+    text-transform: uppercase;
+    color: #A3A6BC;
+    font-family: Gilroy;
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 10px;
+}
+
+.april-switcher-toggle-container .payment-type .payment-amt span {
+    color: #121526;
+    font-size: 19.5px;
+    font-family: Gilroy;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 23px;
+}
+
+.april-switcher-toggle-container .payment-type.active {
+    opacity: 1;
+}
+
+/* Checkbox toggle */
+.april-switcher .switch {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 24px;
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.april-switcher .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.april-switcher .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #DBDBDB;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.april-switcher .slider:before {
+    position: absolute;
+    content: "";
+    height: 22.5px;
+    width: 22.5px;
+    left: 1px;
+    bottom: 1px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.22);;
+    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.22);;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.22);;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F4EDFF 100%);
+}
+
+.april-switcher input:checked + .slider {
+    background-color: #3A3CA6;
+}
+
+/* input:focus + .slider {
+    box-shadow: 0 0 1px #3A3CA6;
+} */
+
+.april-switcher input:checked + .slider:before {
+    -webkit-transform: translateX(17.5px);
+    -ms-transform: translateX(17.5px);
+    transform: translateX(17.5px);
+}
+
+/* Rounded sliders */
+.april-switcher .slider.round {
+    border-radius: 26px;
+}
+
+.april-switcher .slider.round:before {
+    border-radius: 50%;
+}
+
+/* Disabled Switch */
+/* ========================= */
+/* Tootip */
+.april-switcher-toggle-container h6 {
+	margin-top: 0;
+    margin-bottom: .5rem;
+    min-height: 22px;
+}
+.april-switcher-toggle-container * {
+	box-sizing: border-box;
+}
+.april-popover {
+	width: 100%;
+	text-align: left;
+	position: relative;
+	border-radius: 2px;
+	font-size: 14px;
+	line-height: 17px;
+	padding: 6px 8px;
+	margin-bottom: 20px;
+	text-decoration: none;
+	background-color: #fff;
+    border: 1px solid #9ca0b4;
+}
+.april-popover .popover-body {
+	padding: .5rem .75rem;
+	color: #212529;
+}
+/* Popover Arrow */
+.april-popover .arrow {
+	position: absolute;
+	display: block;
+	width: 1rem;
+	height: .5rem;
+	margin: 0 .3rem;
+	top: -8px;
+}
+.april-popover .arrow::after, .april-popover .arrow::before {
+	position: absolute;
+	display: block;
+	content: "";
+	border-color: transparent;
+	border-bottom-color: transparent;
+	border-style: solid;
+}
+.bs-popover-auto[x-placement^="bottom"] .arrow::after, .april-popover-bottom .arrow::after {
+	top: 1px;
+	border-bottom-color: #fff;
+}
+.bs-popover-auto[x-placement^="bottom"] .arrow::after, .bs-popover-auto[x-placement^="bottom"] .arrow::before, .april-popover-bottom .arrow::after, .april-popover-bottom .arrow::before {
+	border-width: 0 8px 8px 8px;
+}
+.april-popover .arrow {
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.april-popover {
+	border-color: #9ca0b4;
+}
+.bs-popover-auto[x-placement^="bottom"] .arrow::before, .april-popover-bottom .arrow::before {
+	border-bottom-color: #9ca0b4;
+}
+.bs-popover-auto[x-placement^="bottom"] .arrow::before, .april-popover-bottom .arrow::before {
+	top: 0;
+}
+.bs-popover-auto[x-placement^="bottom"] .arrow, .april-popover-bottom .arrow {
+	top: calc((.5rem+ 1px) * -1);
+}
+.april-switcher-container {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 272px;
+}
+/* Toggle */
+.april-switcher-toggle-container .disabled-swt .slider {
+	animation: april-vibration 0.3555s ease-in-out forwards;
+}
+@keyframes april-vibration {
+	10% {
+		transform: translateX(-4px);
+	}
+	35% {
+		transform: translateX(4px);
+	}
+	55% {
+		transform: translateX(-4px);
+	}
+	75% {
+		transform: translateX(4px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+@-webkit-keyframes april-vibration {
+	10% {
+		transform: translateX(-4px);
+	}
+	35% {
+		transform: translateX(4px);
+	}
+	55% {
+		transform: translateX(-4px);
+	}
+	75% {
+		transform: translateX(4px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
